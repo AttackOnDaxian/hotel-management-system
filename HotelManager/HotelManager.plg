@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: HotelManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\lenovo\AppData\Local\Temp\RSP3D7B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/HotelManager.pdb" /debug /machine:I386 /out:"Debug/HotelManager.exe" /pdbtype:sept 
+".\Debug\_recordset.obj"
+".\Debug\adodc.obj"
+".\Debug\CheckDlg.obj"
+".\Debug\column.obj"
+".\Debug\columns.obj"
+".\Debug\dataformatdisp.obj"
+".\Debug\datagrid.obj"
+".\Debug\dtpicker.obj"
+".\Debug\field.obj"
+".\Debug\fields.obj"
+".\Debug\font.obj"
+".\Debug\HotelManager.obj"
+".\Debug\HotelManagerDlg.obj"
+".\Debug\MD5.OBJ"
+".\Debug\OrderDlg.obj"
+".\Debug\picture.obj"
+".\Debug\properties.obj"
+".\Debug\property.obj"
+".\Debug\RegisterDlg.obj"
+".\Debug\RoomDlg.obj"
+".\Debug\selbookmarks.obj"
+".\Debug\split.obj"
+".\Debug\splits.obj"
+".\Debug\StandardDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\stddataformatsdisp.obj"
+".\Debug\Userdata.obj"
+".\Debug\UserDlg.obj"
+".\Debug\HotelManager.res"
+]
+Creating command line "link.exe @C:\Users\lenovo\AppData\Local\Temp\RSP3D7B.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+HotelManager.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,621 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\JiuDianManger.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\JiuDianManger.ico"
+IDI_ICON_open           ICON    DISCARDABLE     "res\\33.ico"
+IDI_ICON_login          ICON    DISCARDABLE     "res\\42.ico"
+IDI_ICON_reg            ICON    DISCARDABLE     "res\\57.ico"
+IDI_ICON_rishouru       ICON    DISCARDABLE     "res\\61.ico"
+IDI_ICON_Cancel         ICON    DISCARDABLE     "res\\71.ico"
+IDI_ICON_pay            ICON    DISCARDABLE     "res\\82.ico"
+IDI_ICON_USER           ICON    DISCARDABLE     "res\\91.ico"
+IDI_ICON_Key            ICON    DISCARDABLE     "res\\Key.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HotelManager"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HotelManager",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019RG",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_HotelManager_DIALOG DIALOGEX 0, 0, 421, 265
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HotelManager"
+MENU IDR_MENU1
+FONT 9, "宋体"
+BEGIN
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,0,2,313,187
+END
+
+IDD_USER_DLG DIALOG DISCARDABLE  0, 0, 278, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "用户管理"
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "用户名：",IDC_STATIC,96,27,33,8
+    LTEXT           "密码：",IDC_STATIC,96,48,25,8
+    EDITTEXT        IDC_EDIT_Name,136,24,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Pwd,136,44,72,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "登录",IDC_BUTTON_LOGIN,94,80,34,14
+    PUSHBUTTON      "取消",IDC_BUTTON_Cancel,160,79,34,14
+    ICON            IDI_ICON_USER,IDC_STATIC,15,25,20,20
+END
+
+IDD_REGISTER_DIALOG DIALOG DISCARDABLE  0, 0, 290, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 10, "宋体"
+BEGIN
+    ICON            IDI_ICON_Key,IDC_STATIC,21,19,20,20
+    LTEXT           "用户名",IDC_STATIC,100,14,25,8
+    LTEXT           "密码",IDC_STATIC,100,33,29,8
+    LTEXT           "重新输入",IDC_STATIC,99,52,33,8
+    EDITTEXT        IDC_EDITUser,144,12,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPassword,143,32,54,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPasswordC,143,52,54,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "权限选择",IDC_STATIC,79,68,138,27
+    CONTROL         "添加",IDC_CHECKAdd,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,86,79,27,10
+    CONTROL         "删除",IDC_CHECKDel,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,79,32,10
+    CONTROL         "修改",IDC_CHECKEdit,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,150,79,26,10
+    CONTROL         "查询",IDC_CHECKLookFor,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,79,26,10
+    PUSHBUTTON      "确定",IDOK,81,123,50,14
+    PUSHBUTTON      "取消",IDCANCEL,153,123,50,14
+    EDITTEXT        IDC_EDIT2,142,104,62,14,ES_AUTOHSCROLL
+    LTEXT           "许可证",IDC_STATIC,99,106,30,8
+END
+
+IDD_ORDER_DLG DIALOG DISCARDABLE  0, 0, 635, 282
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "订房信息管理"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,365,261,50,14
+    CONTROL         "",IDC_DATAGRID_ORDER,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,7,28,
+                    621,135
+    LTEXT           "客房编号:",IDC_STATIC,183,192,35,8
+    LTEXT           "客户姓名:",IDC_STATIC,183,209,35,8
+    LTEXT           "入住人数:",IDC_STATIC,183,224,35,8
+    LTEXT           "用餐标准:",IDC_STATIC,183,240,35,8
+    LTEXT           "登记类型:",IDC_STATIC,299,194,35,8
+    LTEXT           "登记证件号:",IDC_STATIC,291,208,43,8
+    LTEXT           "登记时间:",IDC_STATIC,297,225,35,8
+    LTEXT           "押      金:",IDC_STATIC,289,240,44,8
+    GROUPBOX        "订房信息",IDC_STATIC,177,176,269,77
+    EDITTEXT        IDC_EDIT_ORDER_ID,225,191,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORDER_NAME,225,207,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORDER_PEOPLE,225,223,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORDER_NUM,343,207,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORDER_YAJIN,343,239,44,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DINNER,225,239,44,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ORDER_TYPE,343,191,44,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "订房",IDC_ORDER_BTN,193,261,50,14
+    PUSHBUTTON      "删除",IDC_DEL_ORDER_BTN,279,261,50,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,343,223,49,11
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 
+                    0x8,393,223,43,11
+END
+
+IDD_STANDARD_DLG DIALOG DISCARDABLE  0, 0, 615, 284
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "客房标准管理"
+FONT 10, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,319,264,35,13
+    CONTROL         "",IDC_DATAGRID_STANDARD,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,7,7,
+                    601,147
+    GROUPBOX        "客房标准信息",IDC_STATIC,191,161,164,84
+    LTEXT           "客房编号：",IDC_STATIC,206,172,41,8
+    LTEXT           "客房类型：",IDC_STATIC,206,186,41,8
+    LTEXT           "客房面积：",IDC_STATIC,206,201,41,8
+    LTEXT           "容纳人数：",IDC_STATIC,206,214,41,8
+    CONTROL         "价    格：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,207,228,39,12
+    EDITTEXT        IDC_EDIT_STAN_ID,248,170,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STAN_AREA,248,199,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STAN_PEOPLE,248,212,27,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STAN_PRICE,248,226,27,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_STAN_TYPE,248,185,27,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "空调",IDC_CHECK_AIRCONDITION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,301,170,32,10
+    CONTROL         "电话",IDC_CHECK_TELEPHONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,301,185,32,10
+    CONTROL         "电视",IDC_CHECK_TELEVISION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,301,199,32,10
+    CONTROL         "网络",IDC_CHECK_INTERNET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,301,215,32,10
+    CONTROL         "独立卫生间",IDC_CHECK_WASHROOM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,301,230,56,10
+    PUSHBUTTON      "添加",ID_ADD_STAN_BTN,190,264,35,13
+    PUSHBUTTON      "删除",IDC__DEL_STAN_BTN,277,264,35,13
+    PUSHBUTTON      "保存",IDC_MODIFY_STAN_BTN,233,263,35,14
+END
+
+IDD_ROOM_DLG DIALOG DISCARDABLE  0, 0, 497, 284
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "客房信息管理"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDC_ADD_ROOM_BTN,175,263,33,14
+    DEFPUSHBUTTON   "退出",IDCANCEL,304,263,33,14
+    CONTROL         "",IDC_DATAGRID_ROOM,
+                    "{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",WS_TABSTOP,7,7,
+                    483,156
+    GROUPBOX        "客房信息",IDC_STATIC,174,175,163,73
+    EDITTEXT        IDC_EDIT_ROOM_ID,259,186,42,12,ES_AUTOHSCROLL
+    LTEXT           "客房编号:",IDC_STATIC,210,188,35,8
+    LTEXT           "客房类型:",IDC_STATIC,210,204,35,8
+    LTEXT           "客房价格:",IDC_STATIC,210,220,35,8
+    LTEXT           "客房状态:",IDC_STATIC,210,236,35,8
+    COMBOBOX        IDC_COMBO_ROOM_TYPE,259,202,42,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ROOM_PRICE,259,218,42,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ROOM_STATUS,259,234,42,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "保存",IDC_MODIFY_ROOM_BTN,220,263,32,14
+    DEFPUSHBUTTON   "删除",IDC_DELETE_ROOM_BTN,262,263,32,14
+END
+
+IDD_CHECK_DLG DIALOG DISCARDABLE  0, 0, 369, 203
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "结算信息管理"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "退房",IDC_CAL_BTN,180,155,50,14
+    PUSHBUTTON      "退出",IDCANCEL,285,155,50,14
+    GROUPBOX        "订房信息",IDC_STATIC,13,13,347,127
+    LTEXT           "客房编号:",IDC_STATIC,42,28,35,8
+    LTEXT           "登记人姓名:",IDC_STATIC,42,47,43,8
+    LTEXT           "入住人数:",IDC_STATIC,42,64,35,8
+    LTEXT           "用餐标准:",IDC_STATIC,42,81,35,8
+    LTEXT           "押    金:",IDC_STATIC,42,98,35,8
+    EDITTEXT        IDC_EDIT_CHECK_ID,104,26,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHECK_NAME,104,46,43,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_CHECK_PEOPLE,104,64,43,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_CHECK_DINNER,104,80,43,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_CHECK_YAJIN,104,96,43,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "登记类型:",IDC_STATIC,210,29,35,8
+    LTEXT           "证件号:",IDC_STATIC,210,46,27,8
+    LTEXT           "入住时间:",IDC_STATIC,210,63,35,8
+    LTEXT           "结算时间:",IDC_STATIC,210,80,35,8
+    LTEXT           "结算金额:",IDC_STATIC,210,97,35,8
+    EDITTEXT        IDC_EDIT_CHECK_NUM,261,43,43,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_CHECK_MONEY,260,96,43,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "结账",IDC_CHECK_BTN,78,155,50,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DAY,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,260,61,49,11
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_TIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_DISABLED | WS_TABSTOP | 0x8,311,61,42,11
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_CHECKDAY,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | 
+                    WS_TABSTOP,260,79,49,11
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_CHECKTIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_DISABLED | WS_TABSTOP | 0x8,311,79,42,11
+    COMBOBOX        IDC_COMBO_CHECK_TYPE,261,27,43,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HotelManager Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "\0"
+            VALUE "InternalName", "HotelManager\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HotelManager.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "HotelManager 应用程序\0"
+            VALUE "ProductVersion", "\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HotelManager_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 414
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_USER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_REGISTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_ORDER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 628
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_STANDARD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 608
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_ROOM_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 490
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 277
+    END
+
+    IDD_CHECK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        VERTGUIDE, 2
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "login/register"
+    BEGIN
+        MENUITEM "login",                       ID_MENU_DENGLU
+        MENUITEM "register",                    ID_MENU_ZHUCE
+        MENUITEM SEPARATOR
+        MENUITEM "exit",                        ID_MENU_EXIT
+    END
+    MENUITEM "客房标准管理",                ID_MENU_kfbz
+    MENUITEM "订房信息管理",                ID_MENU_dfxx
+    MENUITEM "客房信息管理",                ID_MENU_kfxx
+    MENUITEM "结账信息管理",                ID_MENU_CAIZHENG
+    MENUITEM "help",                        ID_MENU_Help
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_STANDARD_DLG DLGINIT
+BEGIN
+    IDC_DATAGRID_STANDARD, 0x37a, 492, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x6cba, 0x0000, 0x18b4, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x000e, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4190, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0x0101, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 0xc002, 
+0x01d4, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x000c, 0x0000, 0x5ba2, 
+0x623f, 0x6807, 0x51c6, 0x7ba1, 0x7406, 0x0006, 0x0000, 0x0004, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x4453, 0x7665, 0x3839, 
+0x2600, 0x0300, 0x0400, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x4453, 0x7665, 0x3839, 
+0x2600, 0x0300, 0x0400, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4282, 0x0000, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x4282, 
+    IDC_COMBO_STAN_TYPE, 0x403, 7, 0
+0xa5b5, 0xcbc8, 0xe4bc, "\000" 
+    IDC_COMBO_STAN_TYPE, 0x403, 7, 0
+0xeab1, 0xbcd7, 0xe4bc, "\000" 
+    IDC_COMBO_STAN_TYPE, 0x403, 9, 0
+0xc0ba, 0xaabb, 0xd7cc, 0xbfb7, "\000" 
+    0
+END
+
+IDD_ORDER_DLG DLGINIT
+BEGIN
+    IDC_DATAGRID_ORDER, 0x37a, 492, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x7058, 0x0000, 0x16a2, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0018, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4190, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0xff01, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 0xc002, 
+0x01d4, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x000c, 0x0000, 0x8ba2, 
+0x623f, 0x4fe1, 0x606f, 0x7ba1, 0x7406, 0x0006, 0x0000, 0x0004, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x04f0, 0x0001, 0x04f2, 
+0x0001, 0x04f4, 0x0001, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 
+0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0600, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x4282, 0x0000, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x4282, 
+    IDC_COMBO_DINNER, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_DINNER, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_DINNER, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_COMBO_ORDER_TYPE, 0x403, 5, 0
+0xe1bb, 0xb1d4, "\000" 
+    IDC_COMBO_ORDER_TYPE, 0x403, 5, 0
+0xa2c9, 0xcdbf, "\000" 
+    IDC_COMBO_ORDER_TYPE, 0x403, 5, 0
+0xc5cd, 0xe5cc, "\000" 
+    0
+END
+
+IDD_ROOM_DLG DLGINIT
+BEGIN
+    IDC_DATAGRID_ROOM, 0x37a, 488, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x5755, 0x0000, 0x1a40, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x000e, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4190, 0x0000, 
+0x0000, 0x0101, 0x0002, 0x0001, 0x0101, 0x0101, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0xcb04, 0xccce, 0x03e5, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0xc001, 
+0x01d4, 0x0400, 0xcecb, 0xe5cc, 0x0000, 0x0000, 0x0008, 0x0000, 0x5ba2, 
+0x623f, 0x4fe1, 0x606f, 0x0006, 0x0000, 0x0004, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 
+0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0065, 0x0072, 0x0073, 0x0069, 0x006f, 
+0x006e, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 0x11c9, 0xed10, 0x3850, 
+0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0056, 0x0069, 0x0065, 0x0077, 0x0065, 
+0x0072, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0002, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x4282, 0x0000, 0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x4282, 
+    IDC_COMBO_ROOM_TYPE, 0x403, 7, 0
+0xa5b5, 0xcbc8, 0xe4bc, "\000" 
+    IDC_COMBO_ROOM_TYPE, 0x403, 7, 0
+0xeab1, 0xbcd7, 0xe4bc, "\000" 
+    IDC_COMBO_ROOM_TYPE, 0x403, 9, 0
+0xc0ba, 0xaabb, 0xd7cc, 0xbfb7, "\000" 
+    IDC_COMBO_ROOM_STATUS, 0x403, 5, 0
+0xd5bf, 0xd0cf, "\000" 
+    IDC_COMBO_ROOM_STATUS, 0x403, 5, 0
+0xa4d4, 0xa8b6, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "QIANXIHE.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bg副本.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\bg1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 JiuDianManger(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\JiuDianManger.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
